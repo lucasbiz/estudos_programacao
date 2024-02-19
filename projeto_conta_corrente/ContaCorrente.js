@@ -6,6 +6,9 @@ export class ContaCorrente {
     
     _saldo;
     
+    constructor(){
+        this._saldo = 0
+    }
 
     // Métodos
     sacar(valor) {

@@ -37,4 +37,7 @@ console.log(contaCorrenteRicardo.getSaldo())
 
 contaCorrenteRicardo.transferir(100, contaCorrenteAlice)
 
+console.log("=======TRANSFERENCIA=======")
+
+console.log(contaCorrenteRicardo)
 console.log(contaCorrenteAlice)
