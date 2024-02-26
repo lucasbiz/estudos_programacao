@@ -71,6 +71,7 @@ input {
 }
 
 div.movie_content {
+    display: flex;
     padding: 30px;
     background-color: #1D1C3B;
     display: flex;
@@ -102,8 +103,9 @@ div.movie_content {
 }
 
 #movies p {
-    width: 250px;
+    max-width: 100px;
 }
+
 
 h2 {
     font-size: 18px;
