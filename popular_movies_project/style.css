@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --font_family_default: 'Kumbh Sans', Courier, monospace;
+}
+
+body {
+    background-color: #17162E;
+    color: white;
+    font-family: var(--font_family_default);
+}
+
+main {
+    width: 99%;
+}
+
+h1 {
+    margin: 45px auto 29px;
+    width: fit-content;
+}
+
+#searchbox {
+    background-color: #FFFFFF;
+    opacity: 20%;
+    border-radius: 5px;
+    height: 74px;
+    width: 90%;
+    max-width: 634px;
+    margin: 0px auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    margin-left: 20px;
+    max-width: 300px;
+    font-family: var(--font_family_default);
+    border: none;
+    color: #BABABA;
+    padding: 5px;
+}
+
+#search_icon {
+    width: 20px;
+    margin-right: 20px;
+}
+
+#container_checkbox {
+    width: fit-content;
+    margin: 0px auto 50px;
+}
+
+#checkbox {
+    text-decoration: none;
+    width: 50px;
+}
+
+#movies {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+div.movie_content {
+    padding: 30px;
+    background-color: #1D1C3B;
+    display: flex;
+    margin: 0px 0px 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.137);
+}
+
+#movies img {
+    width: 140px; 
+    height: 140px; 
+    object-fit: cover; 
+    object-position: center; 
+    border-radius: 50%;
+}
+
+#avenger_endgame img {
+    object-position: left; 
+}
+
+#doctor_strange_mm img {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.titulos_avaliacoes_favorito {
+    width: 250px;
+    margin: 0px 40px;
+}
+
+#movies p {
+    width: 250px;
+}
+
+h2 {
+    font-size: 18px;
+}
