@@ -17,15 +17,15 @@ async function fetchNumbers() { //função assíncrona, ou seja, nao impede o ca
 
 function manipulateNumbers(numbersArray) {
 
-        let doubleNumbers = numbersArray.map(number => number * 2);
-        let filterNumbers = numbersArray.filter(number => number > 10);
-        let reduceNumbers = numbersArray.reduce((soma, number) => soma + number, 0);
+        let doubleNumbers = numbersArray.map(number => number * 2); //para cada numero presente no array, multiplica por 2
+        let filterNumbers = numbersArray.filter(number => number > 10); //retorna apenas os números maiores que 10
+        let reduceNumbers = numbersArray.reduce((soma, number) => soma + number, 0); //inicia a variavel soma como 0, e soma todos os números do array
                 
         return [doubleNumbers, filterNumbers, reduceNumbers]
 }
 
 function displayResults (array) {
-        let display = document.querySelector('#display_numbers');
+        let display = document.querySelector('#display_numbers'); //seleciona o elemento com id display_numbers
         display.innerHTML = `
         <p> O array multiplcado por 2 é: ${array[0].join(', ')}</p>
         <p> O array reduzido para apenas os números maiores que 10 é: ${array[1].join(', ')}</p>
@@ -33,7 +33,7 @@ function displayResults (array) {
         `
 }
 
-let arrayFetched = fetchNumbers()
-    .then(numbersArray => manipulateNumbers(numbersArray))
-    .then(array => displayResults(array))
+let arrayFetched = fetchNumbers() //chama a função fetchNumbers
+    .then(numbersArray => manipulateNumbers(numbersArray)) //então (then) chama a função manipulateNumbers com o array retornado pela fetchNumbers
+    .then(array => displayResults(array)) //então (then) chama a função displayResults com o array retornado pela manipulateNumbers
 
