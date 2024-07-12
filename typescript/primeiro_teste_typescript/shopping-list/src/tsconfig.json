@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "es6",             // Atualiza a versão do ECMAScript para ES6.
+        "module": "commonjs",        // Mantém o sistema de módulos como CommonJS.
+        "outDir": "/build",          // Diretório de saída para os arquivos compilados.
+        "rootDir": "../src",          // Diretório raiz dos arquivos TypeScript.
+        "strict": true,              // Ativa todas as verificações de tipagem estrita.
+        "esModuleInterop": true      // Ativa a interoperabilidade entre módulos ES6 e CommonJS.
+    }
+}
+
