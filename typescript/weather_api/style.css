@@ -15,22 +15,7 @@
     padding: 40px 0px;
     overflow: hidden;
     border-radius: 50px;
-    background-image: linear-gradient(
-        325deg,
-        hsl(240deg 97% 55%) 0%,
-        hsl(240deg 97% 65%) 32%,
-        hsl(240deg 97% 70%) 59%,
-        hsl(240deg 96% 75%) 74%,
-        hsl(240deg 96% 79%) 84%,
-        hsl(240deg 96% 82%) 90%,
-        hsl(240deg 96% 85%) 94%,
-        hsl(240deg 96% 88%) 97%,
-        hsl(240deg 96% 91%) 99%,
-        hsl(240deg 96% 93%) 100%,
-        hsl(240deg 96% 96%) 100%,
-        hsl(240deg 95% 98%) 100%,
-        hsl(0deg 0% 100%) 100%
-    );
+    background-color: #182534;
 }
 
 #searchBar {
@@ -61,11 +46,30 @@ input::placeholder {
     font-size: 1.5rem;
     cursor: pointer;
     transition: .2s;
+    margin-left: 5px;
 }
 
 #searchIcon:hover {
     color: blueviolet;
 }
+
+#alert {
+    color: red;
+    margin-bottom: 10px;
+}
+
+#info {
+    color: white;
+}
+
+#city {
+    font-size: 1.6em;
+}
+
+#description,  #temp {
+    color: white;
+}
+
 
 #extraInfo {
     position: absolute;
