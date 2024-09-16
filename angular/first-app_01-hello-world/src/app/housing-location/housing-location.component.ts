@@ -1,10 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { HousingLocation } from '../housinglocation';
+import { RouterLink } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-housing-location',
   standalone: true,
-  imports: [],
+  imports: [RouterLink, RouterOutlet],
   template: `
     <section class="listing">
       <img
@@ -15,6 +17,7 @@ import { HousingLocation } from '../housinglocation';
       /> <!-- [src] está entre colchetes pois está sinalizando que a imagem nao virá de um link ou arquivo, mas sim da propriedade "photo" do componente housingLocation  -->
       <h2 class="listing-heading">{{ housingLocation.name }}</h2>
       <p class="listing-location">{{ housingLocation.city }}, {{ housingLocation.state }}</p>
+      <a [routerLink]="['/details', housingLocation.id]">Learn More</a>
     </section>
       <!-- Onde temos propriedades entre duas chaves {{}}, é onde está sendo usada a interpolação -->
   `,
